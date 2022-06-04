@@ -31,8 +31,10 @@ That is why you can instantiate a wrapped pointer by using the wrapper class lik
 ```cpp
 SmartPointer<int> p(new int());
 ```
-and whenever the SmartPointer instance moves out of scope, the memory is freed automatically.
+and whenever the SmartPointer instance moves out of scope, the memory is freed automatically.  
+  
 
+_Note: This Example also shows the order of deconstruction. The objects are deconstructed in the reverse order of their construction. See [here](https://isocpp.org/wiki/faq/dtors#order-dtors-for-arrays) for more details._
 ## 3 - Writing to Files
 - [Writing to Files - Bad](/Demo/example_3_1_write_to_file_bad.cpp)
 - [Writing to Files - RAII](/Demo/example_3_2_write_to_file.cpp)
