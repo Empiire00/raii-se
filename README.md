@@ -12,7 +12,7 @@ Godbolt Compiler Explorer is a free-to-use online tool to compile and execute va
 Thus, you won't need any other tool than a browser (and your attention), if you want to learn a little bit about RAII :).
 
 ## Trying on your own
-If you want to take a closer look at the code used in this e-portfolio, you may want to copy the code in the Demo folder and paste it to the godbolt website.
+If you want to take a closer look at the code used in this e-portfolio, you may want to copy the code in the [Demo](/Demo) folder and paste it to the godbolt website.
 In order to execute the code, you need to activate it by clicking on the settings wheel and ticking `Execute the code` option.
 The output should be shown in a separate tab, however, if not shown, press the `Output` buttom in the bottom bar.
 <br>
