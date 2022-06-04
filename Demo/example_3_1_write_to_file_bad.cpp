@@ -1,4 +1,5 @@
 #include <cstdio>
+#include <iostream>
 #include <string>
  // exceptions
  class file_error { } ;
@@ -31,4 +32,14 @@ void write_to_file_bad(const std::string path, const std::string content)
   }
   // manually close file
   std::fclose(file_handle) ;
+}
+int main(){
+  try{
+    write_to_file_bad("test.txt", "Hello world!");
+  }
+  catch(file_error& e){
+    std::cout << "Error" << std::endl;
+  }
+  return 0;
+
 }

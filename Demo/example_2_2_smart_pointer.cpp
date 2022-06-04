@@ -1,4 +1,5 @@
 #include <iostream>
+// this template class is used to define a smart pointer of a given type
 template <class T>
 class SmartPointer {
    private:
@@ -15,6 +16,7 @@ class SmartPointer {
         delete (p); 
     }
     // Overload operators to allow usage of them
+    // -> Dereference operator
     T& operator*() { 
         return *p; 
     }

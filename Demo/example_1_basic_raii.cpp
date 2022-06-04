@@ -23,6 +23,6 @@ class IntArray{
 int main() {
     {
         IntArray arr(5);
+        std::cout << "arr out of scope now" << std::endl;
     }
-    std::cout << "arr out of scope now" << std::endl;
 }
