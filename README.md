@@ -21,8 +21,7 @@ If any specific compiler flag is needed in order for the code to be executed, yo
 The files contain comments explaining some details in the code. (However, if you are having trouble understanding some segments, feel free to contact me, anyway.)
 
 ## Presentation
-The presentation can be found in this repository.
+The presentation content can be found in this repository. The slides can be found [here](/Presentation).
 
-<br>
-<br>
+## 
 If you have any questions, feel free to contact me.
