@@ -4,9 +4,9 @@ class Resource{
     public:
     Resource(){
         value = new int();
+        std::cout << "Allocated resources" << std::endl;
     }
     ~Resource(){
-        std::cout << "Hello from Resource deconstructor" << std::endl;
         delete(value);
         std::cout << "Freed resources" << std::endl;
     }

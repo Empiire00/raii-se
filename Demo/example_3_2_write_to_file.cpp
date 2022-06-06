@@ -11,24 +11,22 @@ class File {
     File(const char* filename) : file_handle(std::fopen(filename, "w+")) {
         if (file_handle == NULL) {
             throw open_error();
+        }else{
+        std::cout << "Opened File" << std::endl;
         }
     }
 
     ~File() { 
         // close file in destructor only
-        std::fclose(file_handle); 
+        std::fclose(file_handle);
+        std::cout << "Closed File" << std::endl;
     }
 
     void write(const char* str) {
         if (std::fputs(str, file_handle) == EOF) {
             throw write_error();
-        }
-    }
-
-    void write(const char* buffer, std::size_t num_chars) {
-        if (num_chars != 0 &&
-            std::fwrite(buffer, num_chars, 1, file_handle) == 0) {
-            throw write_error();
+        }else{
+            std::cout << "Written to file" << std::endl;
         }
     }
 

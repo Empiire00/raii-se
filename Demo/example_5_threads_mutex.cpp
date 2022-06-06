@@ -30,8 +30,8 @@ void printBlock(int n, char c) {
     std::cout << '\n';
 }
 int main() {
-    std::thread thread1(printBlock, 250, '|');
-    std::thread thread2(printBlock, 250, '-');
+    std::thread thread1(printBlock, 2500, '|');
+    std::thread thread2(printBlock, 2500, '-');
 
     thread1.join();
     thread2.join();
