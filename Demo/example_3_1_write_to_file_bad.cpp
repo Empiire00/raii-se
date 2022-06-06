@@ -20,6 +20,8 @@ void write_to_file_bad(const std::string path, const std::string content)
     if( std::fputs(content.c_str(), file_handle) == EOF )
     {
       throw write_error() ;
+    }else{
+        std::cout << "Written to file" << std::endl;
     }
   }
   // catch errors
